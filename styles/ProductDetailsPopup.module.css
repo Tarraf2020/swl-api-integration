@@ -1,0 +1,106 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #f8f8f8;
+  border: none;
+  font-size: 1.8em;
+  cursor: pointer;
+  color: #333;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.closeButton:hover {
+  background: #ddd;
+}
+
+.largeImage {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.title {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.category,
+.price,
+.rating {
+  font-size: 1.3em;
+  margin-bottom: 12px;
+  color: #666;
+}
+
+.infoGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.infoItem i {
+  margin-right: 8px;
+  color: #af4261; /* You can change this color to match your design */
+}
+
+.infoLabel {
+  font-weight: bold;
+  color: #333;
+}
